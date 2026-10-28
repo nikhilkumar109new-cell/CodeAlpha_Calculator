@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A modern, responsive dark-theme calculator built with HTML, CSS, and JavaScript.">
+  <title>Calculator | CodeAlpha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand-mark" aria-hidden="true">∑</div>
+      <div>
+        <p class="eyebrow">CODEALPHA PROJECT</p>
+        <h1>Calculator</h1>
+      </div>
+      <span class="status-dot" title="Ready"></span>
+    </header>
+
+    <section class="calculator" aria-label="Calculator">
+      <div class="display" aria-live="polite" aria-atomic="true">
+        <div id="history" class="history"></div>
+        <output id="screen" class="screen">0</output>
+      </div>
+
+      <div class="keypad" aria-label="Calculator keypad">
+        <button class="key utility" data-action="clear">AC</button>
+        <button class="key utility" data-action="sign" aria-label="Change sign">+/−</button>
+        <button class="key utility" data-action="percent">%</button>
+        <button class="key operator" data-operator="÷" aria-label="Divide">÷</button>
+
+        <button class="key" data-number="7">7</button>
+        <button class="key" data-number="8">8</button>
+        <button class="key" data-number="9">9</button>
+        <button class="key operator" data-operator="×" aria-label="Multiply">×</button>
+
+        <button class="key" data-number="4">4</button>
+        <button class="key" data-number="5">5</button>
+        <button class="key" data-number="6">6</button>
+        <button class="key operator" data-operator="−" aria-label="Subtract">−</button>
+
+        <button class="key" data-number="1">1</button>
+        <button class="key" data-number="2">2</button>
+        <button class="key" data-number="3">3</button>
+        <button class="key operator" data-operator="+">+</button>
+
+        <button class="key wide" data-action="delete" aria-label="Delete last digit">⌫</button>
+        <button class="key" data-number="0">0</button>
+        <button class="key" data-action="decimal">.</button>
+        <button class="key equals" data-action="equals" aria-label="Calculate">=</button>
+      </div>
+      <p class="hint">Keyboard supported · Press <kbd>Enter</kbd> to calculate</p>
+    </section>
+
+    <footer>Built with <span aria-label="love">♥</span> using HTML, CSS &amp; JavaScript</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
